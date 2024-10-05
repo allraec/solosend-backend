@@ -19,7 +19,7 @@ app.get('/db-test', async (req, res) => {
       const result = await db.query('SELECT * FROM public."User" WHERE "UserId" = $1', [1]);
       res.json(result.rows[0]);  // Send the entire row as a JSON response
     } catch (err) {
-      console.error('Query Error:', err.message);  // Log the actual query error
+      console.error('Query Error:', err as Error);  // Log the actual query error with type assertion
       res.status(500).send('Query failed');
     }
   });
