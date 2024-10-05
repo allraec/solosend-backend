@@ -1,0 +1,29 @@
+{
+  "name": "solosend-backend",
+  "version": "1.0.0",
+  "description": "Node.js/Express backend for SoloSend, providing APIs for user authentication and invoice management. This repository handles user registration, login, and other server-side logic, using PostgreSQL as the database.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allraec/solosend-backend.git"
+  },
+  "author": "Allison Castaneda",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/allraec/solosend-backend/issues"
+  },
+  "homepage": "https://github.com/allraec/solosend-backend#readme",
+  "dependencies": {
+    "express": "^4.21.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7"
+  }
+}
